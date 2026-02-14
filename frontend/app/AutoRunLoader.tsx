@@ -17,6 +17,7 @@ import {
 import { useState, useMemo, useRef, useEffect } from "react";
 import { flattenTree } from "./autorunUtil";
 import TreeView from "./TreeView";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { useSSEPrompt } from "./useSSEPrompt";
 
 interface AutoRunLoaderProps {
@@ -436,7 +437,9 @@ const AutoRunLoader: React.FC<AutoRunLoaderProps> = ({
       {tree.length > 0 && (
         <div className="mt-4 border-t pt-2">
           <div className="font-semibold mb-1">{autorunId}</div>
-          <TreeView nodes={tree} fileStatusByKey={fileStatusByKey} />
+          <ScrollArea className="h-[60vh] pr-2">
+            <TreeView nodes={tree} fileStatusByKey={fileStatusByKey} />
+          </ScrollArea>
         </div>
       )}
     </div>

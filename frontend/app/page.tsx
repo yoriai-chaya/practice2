@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useReducer, useState, useRef } from "react";
 import { Separator } from "@/components/ui/separator";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import FileUploader from "./FileUploader";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import UserAvatar from "./UserAvatar";
 import QA from "./QA";
 import ShowPrompt from "./ShowPrompt";
@@ -78,7 +78,7 @@ export default function App() {
       {/* Main Area */}
       <div className="flex flex-1 overflow-hidden">
         {/* Side-Panel */}
-        <ScrollArea className="w-3/15 p-4 border-r space-y-4">
+        <div className="w-3/15 p-4 border-r space-y-4">
           {mode === "Auto" && (
             <div>
               <AutoBlock
@@ -92,7 +92,7 @@ export default function App() {
               />
             </div>
           )}
-        </ScrollArea>
+        </div>
         {/* Left-Panel */}
         <ScrollArea className="w-6/15 p-4 border-r space-y-4">
           <div ref={leftPanel}>
