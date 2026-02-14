@@ -1,0 +1,64 @@
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Python
+# =========================
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+
+venv/
+.venv/
+env/
+
+# =========================
+# Node.js / Next.js
+# =========================
+node_modules/
+.next/
+dist/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js files
+favicon.ico
+file.svg
+globe.svg
+next.svg
+vercel.svg
+window.svg
+
+# =========================
+# Logs
+# =========================
+log/
+logs/
+*.log
+
+# =========================
+# Backup / Archive
+# =========================
+backup/
+archive/
+
+# =========================
+# Test / build results
+# =========================
+results/
+test-results/
+playwright-report/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
